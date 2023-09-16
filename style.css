@@ -6,6 +6,7 @@
   --button: #0C1618;
   --split: #D1AC00;
   --dark: #665300;
+  --light: #938d71;
   --neutral: #523249;
 }
 
@@ -15,6 +16,12 @@ body, html, .container {
   box-sizing: border-box;
   font-size: 1rem;
   font-family: 'Playfair Display';
+}
+
+h5 {
+  margin-top: 0;
+  color: var(--light);
+  font-weight: 400;
 }
 
 .container {
@@ -71,12 +78,6 @@ input {
   margin: 0% 0% 5% 0%;
 }
 
-input:active, 
-input:focus {
-  border: var(--neutral);
-}
-
-
 li {
   display: flex;
   flex-direction: column;
@@ -95,7 +96,13 @@ label {
   margin-bottom: 1%;
 }
 
-button {
+.show-password {
+  background-color: var(--background-color);
+  border: none;
+  text-decoration: underline;
+}
+
+.submit {
   background-color: var(--button);
   color: var(--background-color);
   font-size: 1.3rem;

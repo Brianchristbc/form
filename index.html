@@ -9,6 +9,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Playfair+Display:wght@400;500;800;900&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+  <script src="javascript.js" defer></script>
 </head>
 <body>
   <div class="container">
@@ -17,22 +19,35 @@
     </div>
     <div class="right">
       <h1>Welcome to PoofClips</h1>
-      <h2>You know you want a poofier claw clip. <br> Support us today so we can upgrade your fit  of tomorrow.</h2>
+      <h2>You know you want a poofier claw clip. <br> Sign up today so we can upgrade your fit  of tomorrow.</h2>
+      <h5>Fields denoted with an <span aria-label="important">*</span> are required to be filled in</h5>
+      
       <form action="#" method="post">
         <legend></legend>
         <section>
           <ul>
             <li>
-              <label for="user-name">FIRST NAME</label>
+              <label for="user-name">FIRST NAME
+                <span aria-label="important">*</span>
+              </label>
               <input type="text" id="user-name" name="name" required>
             </li>
             <li>
-              <label for="user-email">EMAIL</label>
+              <label for="user-email">EMAIL
+                <span aria-label="important">*</span>
+              </label>
               <input type="email" id="user-email" name="email" required>
             </li>
             <li>
-              <label for="user-name">PASSWORD</label>
+              <label for="user-name">PASSWORD
+                <span aria-label="important">*</span>
+              </label>
               <input type="password" id="user-password" name="password" required>
+            </li>
+            <li>
+              <div class="password-reveal">
+                <button type="button" class="show-password">SHOW PASSWORD</button>
+              </div>
             </li>
           </ul>
           <ul>
@@ -45,13 +60,16 @@
               <input type="tel" id="user-tel" name="tel">
             </li>
             <li>
-              <label for="password-confirm">CONFIRM PASSWORD</label>
+              <label for="password-confirm">CONFIRM PASSWORD 
+                <span aria-label="important">*</span>
+              </label>
               <input type="password" id="password-confirm" name="password-confirm" required>
             </li>
           </ul>
+          
         </section>
 
-        <button>Submit Details</button>
+        <button class="submit" type="submit">Submit Details</button>
       </form>
 
       <p>Already have an account? <span><a href="index.html">Log in</a></span></p>
