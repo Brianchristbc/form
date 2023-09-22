@@ -2,6 +2,7 @@
   --valid-input: #004643;
   --invalid-input: #f44336;
   --background-color: #faf4d3;
+  --background-shadow: #cdc9ae;
   --text-color: #0C1618;
   --button: #0C1618;
   --split: #D1AC00;
@@ -16,6 +17,7 @@ body, html, .container {
   box-sizing: border-box;
   font-size: 1rem;
   font-family: 'Playfair Display';
+  background-color: var(--background-color);
 }
 
 h5 {
@@ -78,6 +80,12 @@ input {
   margin: 0% 0% 5% 0%;
 }
 
+/* input:invalid {
+  border: 2px solid var(--invalid-input);
+} */
+
+
+
 li {
   display: flex;
   flex-direction: column;
@@ -114,4 +122,8 @@ label {
 
 section {
   display: flex;
+}
+
+::placeholder {
+  color: var(--background-shadow);
 }
